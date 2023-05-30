@@ -1,0 +1,135 @@
+.page5 {
+  position: relative;
+  margin-top: 70px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.title-page5 {
+  text-align: center;
+  font-family: poppins;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.container-frame-support {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.system-support {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  grid-template-rows: 40px 80px;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "w3s google"
+    "youtube github";
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.w3s,
+.google,
+.youtube,
+.github {
+  background: rgba(243, 243, 243);
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 10px;
+  
+}
+
+.w3s {
+  grid-area: w3s;
+}
+.size1 {
+  height: 30px;
+}
+.size2 {
+  height: 22px;
+}
+.google {
+  grid-area: google;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.github {
+  grid-area: github;
+}
+
+.logo2 {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.logo2 img {
+  height: 68px;
+}
+.container-resume {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.resume {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.header-resume1,
+.header-resume2 {
+  font-family: poppins;
+  font-weight: 700;
+  color: #f3f3f3;
+}
+.resume a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.header-resume2 {
+  margin-top: 16px;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  color: #f3f3f3;
+  font-size: 12px;
+  margin-top: 60px;
+}
+.arro {
+  color: #f3f3f3;
+  font-size: 200px;
+  position: relative;
+  display: flex;
+}
+.arro img {
+  position: relative;
+  height: 90px;
+  display: flex;
+}
+.iconSupport{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.iconSupport:hover{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}

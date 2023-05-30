@@ -1,0 +1,378 @@
+.container-about-art-old{
+    position: relative;
+    background-color: #161616;
+    display:table ;
+    z-index: 2;
+    padding: 50px 0px;
+    width: 100%;
+    
+    text-align: justify;
+    overflow: hidden;
+}
+.formEmail{
+    position: absolute;
+    background-color: #F7F7F7;
+    height: 100vh;
+    border-radius: 40px 40px 40px 40px;
+    width: 100%;
+    left: 0px;
+    bottom: -100px;
+    opacity: 0;
+    
+}
+.formEmail-active{
+    opacity: 1;
+    position: fixed;
+    top: 20px;
+    animation: formscaleactive .6s ease-in forwards;
+}
+
+@keyframes formscaleactive {
+    to{
+        bottom: 0px;
+        
+    }
+}
+.formEmail-remove-active{
+    animation: formscaleremove .6s ease-in forwards;
+}
+
+@keyframes formscaleremove {
+    to{
+        top: -100px;
+        
+    }
+}
+
+.containerEmail{
+    margin: 25px;
+    position: relative;
+   
+}
+.headerIconEmail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.headerIconEmail > img {
+    height: 20px;
+}
+#plane{
+    transform: rotate(-45deg);
+}
+.movePlane{
+    max-width: 50px;
+}
+.form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#profil{
+    height: 30px;
+}
+.toEmail{
+    display: flex;
+    align-items: center;
+    
+}
+.container-profil{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    width: 240px;
+    border-radius: 50px;
+    justify-content: space-around;
+    background: #F4F4F4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#attd{
+    margin-left: 10px;
+    height: 18px;
+}
+input {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 15px;
+    color: #4d4d4d;
+    outline: none;
+    resize: none;
+    border: none;
+    
+}
+
+label {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+.container-profil > span{
+ font-family: poppins;
+ font-weight: 400;
+ font-size: 14px;
+}
+.continerMsgClient{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#email{
+    margin-left: 10px;
+    outline: none;
+    resize: none;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9 ;
+    border-radius: 1px;
+    background-color: #F7F7F7;
+    width: 100%;
+
+}
+#nameForEmail {
+    margin-left: 10px;
+    outline: none;
+    resize: none;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9 ;
+    border-radius: 1px;
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+input {
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+#message{
+    margin-top: 4px;
+    outline: none;
+    resize: none;
+    border: none;
+    font-family: poppins;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+.section2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #4d4d4d;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.section3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #161616;
+    
+}
+.formEmailIn{
+    transform: translateX(-3%);
+   
+}
+
+/* cek animation  */
+.containerInputName{
+   
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+.containerInputEmail{
+    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+#nameClient{
+    width: 100%;   
+}
+#emailClient{
+    width: 100%;   
+}
+
+
+/* animatsi pada form input */
+.containerInput{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.containerInputName, .containerInputEmail{
+    width: 100%;
+  overflow: hidden;
+  margin-top: 0px;
+  }
+  .wave-group {
+position: relative;
+width: 100%;
+}
+
+.wave-group .input {
+margin-top: 10px;
+font-size: 14px;
+padding: 10px 10px 10px 5px;
+display: block;
+width: 100%;
+border: none;
+border-bottom: 1px solid #D9D9D9;
+background: transparent;
+}
+
+.wave-group .input:focus {
+outline: none;
+}
+
+.wave-group .label {
+color: #D9D9D9;
+font-size: 18px;
+font-weight: 500;
+position: absolute;
+pointer-events: none;
+left: 5px;
+top: 10px;
+display: flex;
+font-family: poppins;
+}
+
+.wave-group .label-char {
+transition: 0.2s ease all;
+transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+transform: translateY(-20px);
+font-size: 14px;
+color: #EDA600;
+}
+
+.wave-group .bar {
+position: relative;
+display: block;
+width: 100%;
+}
+
+.wave-group .bar:before,.wave-group .bar:after {
+content: '';
+height: 2px;
+width: 0;
+bottom: 1px;
+position: absolute;
+background: #636364;
+transition: 0.2s ease all;
+-moz-transition: 0.2s ease all;
+-webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+left: 50%;
+}
+
+.wave-group .bar:after {
+right: 50%;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+width: 80%;
+}
+
+.error{
+    color: red;
+}
+
+.container-popup{
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    z-index: 1;
+}
+.container-popup-active{
+    opacity: 1;
+    z-index: 2;
+    animation: movePopup .3s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes movePopup {
+    to{
+        top: 0px;
+    }
+}
+.frame-popup{
+    background-color: lavender;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+.title-popup{
+    font-size: 26px;
+    font-weight: 600;
+    color: #181818;
+    position: relative;
+    margin-top: 167px;
+    text-align: center;
+}
+.teks-popup{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2px;
+    color: #636364;
+}
+.inputpopup{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+
+}
+.buttonY, .buttonN{
+    padding: 8px 40px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: #4d4d4d;
+    font-family: poppins;
+    font-weight: 400;
+}
+.buttonY{
+    background-color: #00C851;
+    color: #f7f7f7;
+    
+}
+.buttonN{
+    background-color: #ff4444;
+    color: #f7f7f7;
+}
+
+
+.bodymovinanim {
+    max-width: 350px;
+    margin-bottom: 130px;
+    cursor: pointer;
+    position: relative;
+    top: -6px;
+  }

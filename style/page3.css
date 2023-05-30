@@ -1,0 +1,413 @@
+@font-face {
+    font-family: old-boy;
+    src: url(../font/Old\ Fat\ Boy.otf);
+    src: url(../font/Old\ Fat\ Boy.ttf);
+}
+
+.containerSkill {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+}
+
+.containerMySkill {
+    position: absolute;
+    top: 0;
+}
+
+.boxSkill {
+    width: 100%;
+    height: 180px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: -62px;
+}
+
+.box {
+    width: 110px;
+    height: 160px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.letterM,
+.letterY,
+.letterSkill {
+    font-family: old-boy;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 200px;
+    position: relative;
+    color: #C4DA37;
+}
+
+.letterM,
+.letterSkill {
+    left: -150px;
+}
+
+.letterM-active {
+    animation: moveletter .8s ease-in-out forwards;
+}
+
+.letterSkill-active {
+    animation: moveletter 1s ease-in-out forwards;
+}
+
+@keyframes moveletter {
+    to {
+        left: 0px;
+    }
+}
+
+.letterY {
+    left: 150px;
+}
+
+.letterY-active {
+    animation: moveletterM .9s ease-in-out forwards;
+}
+
+@keyframes moveletterM {
+    to {
+        left: 0px;
+    }
+}
+
+.containerMainPage3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.containerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
+.circle1 {
+    height: 0;
+    width: 0px;
+    border-radius: 100%;
+    background: #636364;
+    opacity: .05;
+}
+
+.circle1-active {
+    animation: circle1-active 1.7s forwards;
+}
+
+@keyframes circle1-active {
+    to {
+        height: 290px;
+        width: 290px;
+    }
+}
+
+.circle2 {
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    position: absolute;
+    background: #636364;
+    opacity: 0.2;
+}
+
+.circle2-active {
+    animation: circle2-active 1.5s forwards;
+}
+
+@keyframes circle2-active {
+    to {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+.circle3 {
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 200vh;
+    height: 200vh;
+    border-radius: 100%;
+    background: #636364;
+}
+
+.circle3-active {
+    animation: circle3-active .8s ease-in-out forwards;
+}
+
+@keyframes circle3-active {
+    0% {}
+    100% {
+        height: 220px;
+        width: 220px;
+        background: #C4DA37;
+    }
+}
+
+.fotoku {
+    height: 460px;
+    position: relative;
+    top: -70px;
+    z-index: 2;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.fotoku-active {
+    position: relative;
+    top: -70px;
+    z-index: 2;
+    animation: fotoAnimation .8s forwards;
+}
+
+@keyframes fotoAnimation {
+    to {
+        height: 350px;
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+}
+
+.containerItemSkill {
+    display: flex;
+    position: absolute;
+}
+
+.ai,
+.ps,
+.js,
+.html,
+.css,
+.figma,
+.react {
+    height: 60px;
+    width: 60px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+}
+
+.containerItemSkill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "css a1 react" "figma html js" "ps ai a2";
+}
+
+.containerItemSkill div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css {
+    grid-area: css;
+    padding: 5px;
+    left: -60px;
+    z-index: 0;
+    position: relative;
+}
+
+.react {
+    grid-area: react;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+
+.figma {
+    grid-area: figma;
+    position: relative;
+    z-index: 2;
+    left: -20px;
+    top: 10px;
+}
+
+.html {
+    grid-area: html;
+    position: relative;
+    z-index: 2;
+    top: -20px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-html,
+.icon-css,
+.icon-js,
+.icon-react,
+.icon-ai,
+.icon-ps,
+.icon-figma {
+    position: relative;
+    height: 30px;
+}
+
+.js {
+    grid-area: js;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+    left: 30px;
+    top: -20px;
+}
+
+.ps {
+    grid-area: ps;
+    position: relative;
+    z-index: 2;
+    left: -35px;
+    top: 30px;
+}
+
+.ai {
+    grid-area: ai;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+    right: -60px;
+    opacity: 0;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.aiMove {
+    transform: (-20px);
+    opacity: 1;
+}
+
+.animateItem {
+    animation: fadeInRight forwards 0.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutRight {
+    from {}
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* text repeat animation */
+
+.text-repeat {
+    overflow: hidden;
+    top: 525px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.scroll-1 {
+    width: 100%;
+    display: flex;
+    color: rgb(241, 241, 241);
+}
+
+.scroll-1 div {
+    font-size: 3em;
+    white-space: nowrap;
+    font-weight: 800;
+    text-transform: uppercase;
+    animation: animate 20s linear infinite;
+    animation-delay: -10s;
+}
+
+.scroll-1 div:nth-child(2) {
+    animation: animate2 20s linear infinite;
+    animation-delay: -20s;
+}
+
+.scroll-1 div span {
+    -webkit-text-stroke: 1.5px rgb(241, 241, 241);
+    color: transparent;
+}
+
+.scroll-1.text1 {
+    transform: rotate(15deg) translateY(100px) translateX(-100px);
+    background-color: #161616;
+    position: relative;
+    left: 80px;
+    width: 450px;
+}
+
+.scroll-1.text2 {
+    transform: rotate(-15deg) translateY(200px) translateX(-200px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    background-color: #161616;
+    position: relative;
+    left: 80px;
+    width: 450px;
+    top: -227px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(200);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.background-texture {
+    background: url("../img/paper\ texture.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    z-index: 3;
+}
+
+.background-film-gain {
+    background: url("../img/film\ gain.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: screen;
+    z-index: 3;
+    opacity: .5;
+}

@@ -1,0 +1,24 @@
+.container-infinite-circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+  
+    
+}
+#circ{
+    font-size: 30px;
+    font-family: 'cousine',monospace;
+    text-transform: uppercase;
+    animation: spin 14s linear infinite;
+    color: #C4DA37;
+    position: absolute;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

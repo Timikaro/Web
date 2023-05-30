@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: old-boy;
+    src: url(../font/Old\ Fat\ Boy.otf);
+    src: url(../font/Old\ Fat\ Boy.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
+
+.container-pg1 {
+    overflow: hidden;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(0px at center center);
+}
+
+.container-first-view {
+    overflow: hidden;
+}
+
+.box {
+    width: 130px;
+    height: 180px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.container-tittle {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container-hello {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+    justify-content: flex-end;
+}
+
+#icon-hello {
+    position: relative;
+}
+
+#hello {
+    margin-left: 10px;
+}
+
+#icon-hello img {
+    width: 45px;
+}
+
+p {
+    color: #161616;
+}
+
+#fullname,
+#hello {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.name {
+    color: #EDA600;
+}
+
+#icon-trademark {
+    height: 15px;
+}
+
+.container-Mark {
+    position: relative;
+    left: -40px;
+}
+
+.container-Mark>p {
+    font-size: 26px;
+}
+
+.m17 {
+    position: relative;
+}
+
+.m17 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+}
+
+.m17 .text-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-right: 10px;
+    align-items: flex-end;
+}
+
+.m17 .text-wrapper-mark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+#icon-hello {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
+
+
+/* animation name */
+
+.ml11 {
+    font-family: manrope;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: rgb(29, 29, 29);
+    transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+    top: 0;
+    left: 0;
+}
+
+.color-name {
+    color: #EDA600;
+}
+
+.ml11 .letter-name {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+/* Jumbo title */
+
+.innerText {
+    position: fixed;
+    font-family: old-boy;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 0;
+    font-size: 400px;
+    font-weight: 500;
+    color: #C4DA37;
+    text-align: center;
+    width: 100%;
+}
+
+.Text {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 0;
+    font-size: 100vw;
+    color: transparent;
+    -webkit-text-stroke: 3px #161616;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* About Me */
+
+
+/* navbar */
+
+#icon-logo1 {
+    height: 45px;
+    float: left;
+    padding-left: 30px;
+}
+
+#icon-burger {
+    width: 65px;
+    float: right;
+    padding-right: 30px;
+}
+
+
+/* artk */
+
+.container-about {
+    position: relative;
+    margin-top: 100vh;
+    background: #161616;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.title-about {
+    color: #F7F7F7;
+}
+
+.art-about {
+    color: #F7F7F7;
+    width: 100%;
+    display: inline;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+}
+
+
+/* contact */
+
+.container-contact {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.mgr {
+    margin-right: 15px;
+    z-index: 4;
+}
+
+.shape {
+    padding: 9px 10px;
+    border-radius: 10px;
+    background-color: #EDA600;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 4;
+}
+
+.shape img {
+    position: relative;
+    margin-left: 12px;
+    height: 30px;
+    width: 33px;
+}
+
+#nameemail {
+    color: #1E1E1E;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.insta img {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    position: relative;
+}
+
+.insta {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#notif-insta {
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+    background-color: #78DE45;
+}
+
+.whatsapp img {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    position: relative;
+}
+
+.whatsapp {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#notif-whatsapp {
+    position: absolute;
+    z-index: 1;
+    color: #78DE45;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    top: -4px;
+}
+
+.container-head-about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 16px;
+}
+
+.icon-title-about {
+    height: 40px;
+}
+
+.moreDetail {
+    background: none;
+    outline: none;
+    resize: none;
+    border: none;
+    color: #EDA600;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* hightlight text */
+
+#parag1,
+#parag2 {
+    font-size: 18px;
+    text-align: start;
+    line-height: 24px;
+    text-indent: 2em;
+    position: relative;
+    padding: 5px 26px;
+    color: #F7F7F7;
+}
+
+#parag2 {
+    display: none;
+}
+
+mark {
+    --color1: #C4DA37;
+    --color2: #C4DA37;
+    --height: 100%;
+    all: unset;
+    background-image: linear-gradient(var(--color1), var(--color2));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 var(--height);
+    animation: highlight 1000ms ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    line-height: 30px;
+}
+
+@keyframes highlight {
+    to {
+        background-size: 100% var(--height);
+        color: rgb(17, 17, 17);
+    }
+}
+
+.containerNavbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+/* menu navbar */
+
+.containerIconNav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    display: none;
+    overflow: hidden;
+}
+
+.containerIconNav-show {
+    background: rgba(51, 51, 51, 0.09);
+    backdrop-filter: blur(3px);
+    padding: 11px 7px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    z-index: 5;
+}
+
+.containerMenuNav {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #F7F7F7;
+    position: absolute;
+    transform: translateX(100%);
+    transition: all .8s;
+    transition-timing-function: cubic-bezier(1, 0.01, 0, 0.96);
+}
+
+.containerMenuNav.active {
+    transform: translateX(0%);
+    position: fixed;
+    opacity: 1;
+    z-index: 4;
+}
+
+.containerMenuNav-show {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.containerMenuNav div {
+    font-family: poppins;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.aboutMe {
+    transform: translateX(200%);
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.mySkill {
+    transform: translateX(200%);
+    transition: all 1.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.latesWork {
+    transform: translateX(200%);
+    transition: all 1.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.showTitleNav {
+    transform: translateX(0);
+}
+
+.container-burger {
+    position: relative;
+}
+
+.closeMenu {
+    position: relative;
+    left: 82px;
+}
+
+
+/* animation button menu */
+
+
+/* 
+green: #3FAF82
+
+*/
+
+.btnIconMenuBar {
+    position: relative;
+    transform: translate(-50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#bar {
+    display: block;
+    width: 90%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    height: 6px;
+    background: #fff;
+    transition: all .3s;
+    position: relative;
+}
+
+#bar+#bar {
+    margin-top: 7px;
+}
+
+.active #bar:nth-child(1) {
+    animation: ease .7s top forwards;
+}
+
+.not-activebtn #bar:nth-child(1) {
+    animation: ease .7s top-2 forwards;
+}
+
+.active #bar:nth-child(2) {
+    animation: ease .7s scaled forwards;
+}
+
+.not-activebtn #bar:nth-child(2) {
+    animation: ease .7s scaled-2 forwards;
+}
+
+.active #bar:nth-child(3) {
+    animation: ease .7s bottom forwards;
+}
+
+.not-activebtn #bar:nth-child(3) {
+    animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+    50% {
+        top: 22px;
+        transform: rotate(0);
+    }
+    100% {
+        top: 16px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes top-2 {
+    0% {
+        top: 22px;
+        transform: rotate(45deg);
+    }
+    50% {
+        top: 22px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+    50% {
+        bottom: 22px;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: 10px;
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes bottom-2 {
+    0% {
+        bottom: 22px;
+        transform: rotate(135deg);
+    }
+    50% {
+        bottom: 22px;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes scaled {
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes scaled-2 {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animationNotifWa {
+    position: relative;
+    animation: moveNotifWa 1s infinite;
+}
+
+.animationNotifInsta {
+    position: relative;
+    animation: moveNotifInsta 1s infinite;
+}
+
+@keyframes moveNotifWa {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveNotifInsta {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
+
+.buttonStart {
+    border: 2.3px solid #636364;
+    padding: 30px 12px;
+    border-radius: 24px;
+}
+
+.iconStart img {
+    position: relative;
+    height: 18px;
+}
+
+.iconStart img {
+    position: relative;
+    animation: moveStar 1s ease-in-out infinite;
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

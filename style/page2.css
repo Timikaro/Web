@@ -1,0 +1,141 @@
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   overflow: hidden;
+   margin-bottom: 100px;
+   margin-top: 150px;
+    
+}
+.container-page2{
+    position: relative;
+   
+
+}
+.container-colm{
+    padding: 0px 40px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-colm-left {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.container-colm-right{
+    display: flex;
+    flex-direction: row;
+}
+.colm1, .colm2, .colm3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.colm1{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    
+
+}
+.colm2, .colm3{
+    position: relative;
+}
+.colm1 > img{
+    width: 60px;
+    opacity: 0.3;
+    
+}
+
+.activeIcon{
+    opacity: 1;
+}
+
+.colm2 > div{
+    position: relative;
+    left: 20px;
+    font-family: poppins, sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #C4DA37;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+}
+.colm3 > div{
+    position: relative;
+    font-family: poppins, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    
+    z-index: 1;
+    right: 20px;
+}
+.net-title, .grp-title, .ui-title{
+    position: absolute;
+    left: 0;
+    
+}
+
+.icon {
+    position: relative;
+    left: -110px;
+    opacity: 0;
+}
+.icon-active{
+    animation: moveIcon .4s ease-in-out forwards;
+}
+@keyframes moveIcon {
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.title{
+    left: -70px ;
+    -webkit-text-stroke: 1px #F5F5F5;
+    color: transparent;
+    z-index: 0;
+    opacity: 0;
+}
+.title-active{
+    animation: moveTitle .5s ease-in-out forwards;
+}
+@keyframes moveTitle {
+    0%{
+        left: -50px;
+    
+    }
+    50%{
+        left: 20px;
+       
+    }
+    100%{
+        font-size: 35px;
+        left: -50px;
+        color: #C4DA37;
+        -webkit-text-stroke: transparent;
+        opacity: 1;
+    }
+}
+
+.number-active{
+  animation: textScale .4s ease-in-out forwards;
+}
+
+@keyframes textScale {
+    100%{
+        font-size: 90px;
+        color: transparent;
+        -webkit-text-stroke: 1px #F5F5F5;
+        opacity: 0.2;
+    }
+}
