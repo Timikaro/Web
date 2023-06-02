@@ -1,6 +1,6 @@
 $(".shape").click(function () { 
     $(".formEmail").addClass("formEmail-active");
-    $("body").css("position", "fixed");
+    // $("body").css("position", "fixed");
     
 });
 
@@ -15,7 +15,6 @@ function openFullscreen() {
   }
 }
 
-
 const nameInput = document.querySelector("#nameClient")
 const email = document.querySelector("#emailClient")
 const message = document.querySelector("#message")
@@ -26,9 +25,6 @@ if (h >= 4 && h < 10) var gettime = "Pagi";
 if (h >= 10 && h < 15) var gettime = "Siang";
 if (h >= 15 && h < 18) var gettime = "Sore";
 if (h >= 18 || h < 4) var gettime = "Malam";
-
-
-
 
 
 function sendMail() {
@@ -44,7 +40,8 @@ function sendMail() {
   const templateID = "template_dbawnxu";
 
     emailjs.send(serviceID, templateID, params)
-    .then(res=>{
+    .then(
+        res=>{
         document.getElementById("nameClient").value = "";
         document.getElementById("emailClient").value = "";
         gettime.value = "";
@@ -136,10 +133,13 @@ function validateForm() {
         setTimeout(() => {
             animationSkipForward.playSegments([0,45], true);
           }, 1000);
-    
-
         }
-     
+    if (errorFlag == false) {
+        sendMail();
+    }else{
+        console.log("email anda tidak valid")
+    }
+
     }
     
 function closeMenu() {       

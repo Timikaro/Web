@@ -1,7 +1,7 @@
 let section = document.querySelector('section');
 let text = document.querySelector('.Text');
 let innertext = document.querySelector('.innerText');
-let buttonStart = document.querySelector(".buttonStart")
+
 
 
 window.addEventListener('scroll', function () {
@@ -29,24 +29,6 @@ var titleNav = nav.querySelectorAll("div");
 
 var textWrapper = document.querySelector('.m17 .letters ');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: false})
-  .add({
-    targets: '.m17 .letter',
-    translateY: ["1.1em", 0],
-    translateX: ["0.55em", 0],
-    translateZ: 0,
-    rotateZ: [180, 0],
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.m17',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
 
 
   var textWrapper = document.querySelector('.ml11 .letters-name');
