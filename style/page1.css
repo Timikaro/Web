@@ -563,7 +563,7 @@ mark {
     opacity: 0; */
    
 }
-.text2{
+.subtext2{
     display: flex;
     flex-direction: column;
     text-align: right;
