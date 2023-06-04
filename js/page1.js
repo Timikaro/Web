@@ -111,10 +111,13 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 
 btn.on('click', function() {
   $(this).toggleClass('active not-activebtn');
-  $(".containerMenuNav").toggleClass("active");
-  $(".aboutMe").toggleClass("showTitleNav");
-  $(".mySkill").toggleClass("showTitleNav");
-  $(".latesWork").toggleClass("showTitleNav");
+  $(".containerMenuNav").toggleClass("activeMenuNav");
+  $(".aboutMe").addClass("showTitleNav");
+  $(".mySkill").addClass("showTitleNav");
+  $(".latesWork").addClass("showTitleNav");
+  $(".containertext1").toggleClass("containertext1-active");
+  $(".containertext2").toggleClass("containertext2-active");
+
   // $("body").css("position", "fixed");
   
 });
@@ -134,3 +137,26 @@ function linkWa(){
 function linkInsta(){
   window.location.replace("https://instagram.com/andika_nugh");
 }
+
+// transisi link 
+$(".aboutMe").click(function () { 
+  $(btn).toggleClass('active not-activebtn');
+  $(".containerMenuNav").removeClass("activeMenuNav");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".container-about-art-old").offset().top 
+}, 1000);
+});
+$(".mySkill").click(function () { 
+  $(btn).toggleClass('active not-activebtn');
+  $(".containerMenuNav").removeClass("activeMenuNav");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".containerSkill").offset().top 
+}, 1000);
+});
+$(".latesWork").click(function () { 
+  $(btn).toggleClass('active not-activebtn');
+  $(".containerMenuNav").removeClass("activeMenuNav");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".page4").offset().top 
+}, 1000);
+});
